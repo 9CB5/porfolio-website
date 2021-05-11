@@ -5,7 +5,6 @@
 }
 html, body {
 	min-height: 100%;
-	background: #fff;
 	color: #000;
 }
 
@@ -44,6 +43,10 @@ nav {
     list-style: none;
 }
 
+.nav-active {
+    transform: translateX(0%);
+}
+
 .burger {
     display: none;
 }
@@ -55,9 +58,90 @@ nav {
     margin: 5px;
 }
 
+
+/*Banner*/
+
+.banner {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.banner h1 {
+    font-size: 50px; 
+    padding: 15px;
+}
+
+.banner h2 {
+    font-size: 40px; 
+    padding: 15px
+}
+
+.banner p {
+    font-size: 25px; 
+    padding: 15px
+}
+
+.banner-text {
+    width: 50%;
+    margin: auto;
+}
+
+/*About*/
+
+.about-me {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    padding-top: 70px;
+}
+
+.about-me-title {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-me-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.tech-list {
+    columns: 2;
+    list-style-type: circle;
+}
+
+mark {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+  
+
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 40%;
+    }
+
+    .banner-text {
+        width: 80%;
+    }
+
+    .about-me-info {
+        width: 80%;
     }
 }
 
@@ -80,13 +164,49 @@ nav {
         transform: translateX(100%); /* moves the nav off the screen, overflow-x hidden stop vertical scrolling */
     }
 
+    .nav-active {
+        transform: translateX(0%);
+    }
+
     .burger {
         display: block;
         cursor: pointer;
     }
+
+    .banner {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-me-info {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .about-me-info img {
+        height: 200px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 25px;
+    }
+    .banner-text h2 {
+        font-size: 20px;
+    }
+    .banner-text p {
+        font-size: 15px;
+    }
 }
 
-.nav-active {
-    transform: translateX(0%);
-}
+
 
