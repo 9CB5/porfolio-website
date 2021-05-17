@@ -30,7 +30,8 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 20%;
+    align-items: center;
+    width: 30%;
 }
 
 .nav-links a {
