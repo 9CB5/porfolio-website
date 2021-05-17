@@ -6,7 +6,7 @@
 html, body {
 	min-height: 100%;
 	color: #000;
-    animation: fadeInAnimation ease 2.5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -271,8 +271,12 @@ video {
 
 @media screen and (max-width:768px) {
 
-    body {
+    html,body {
         overflow-x: hidden;
+    }
+
+    .logo {
+        font-size: 12px;
     }
 
     .nav-links {
