@@ -58,9 +58,6 @@ nav {
     margin: 5px;
 }
 
-
-/*Banner*/
-
 .banner {
     font-family: 'Roboto Mono', monospace;
 }
@@ -85,19 +82,20 @@ nav {
     margin: auto;
 }
 
-/*About*/
-
 .about-me {
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
     padding-top: 70px;
 }
 
-.about-me-title {
+.section-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
     font-weight: bold;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 25px;
 }
 
 .about-me-info {
@@ -111,6 +109,111 @@ nav {
 .tech-list {
     columns: 2;
     list-style-type: circle;
+
+}
+
+.my-work {
+    padding-top: 25px;
+}
+
+.card-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    font-family: 'Roboto Mono', monospace;
+    margin: 25px;
+    font-size: 20px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-info {
+    padding: 2px 16px;
+}
+
+.card-info h2 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.card-info .technologies {
+    color: #6f6f6f;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.card-info .project-description {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.link-button {
+	color: skyblue !important;
+    font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 5px;
+	border: 4px solid skyblue !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.link-button:hover {
+	color: black !important;
+	background: skyblue;
+	border-color: skyblue !important;
+	transition: all 0.4s ease 0s;
+}
+
+.contact-me {
+    padding-top: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-link-button {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    color: skyblue;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 3px solid skyblue;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+    margin: 10px;
+  }
+
+.social-link-button:hover{
+    background: skyblue;
+    color: black;
+}
+
+.finisher {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 mark {
@@ -142,6 +245,14 @@ video {
 
     .about-me-info {
         width: 80%;
+    }
+
+    .card-holder {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 50%;
     }
 }
 
@@ -206,6 +317,20 @@ video {
     .banner-text p {
         font-size: 15px;
     }
+
+    .card-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 35px;
+    }
+
+    .card {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    
 }
 
 
