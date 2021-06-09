@@ -141,6 +141,14 @@ nav {
     font-family: 'Roboto Mono', monospace;
     margin: 25px;
     font-size: 20px;
+    position: relative;
+    min-height: 700px;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
 }
   
 .card:hover {
@@ -149,6 +157,7 @@ nav {
 
 .card-info {
     padding: 2px 16px;
+    min-height: 300px;
 }
 
 .card-info h2 {
@@ -265,8 +274,11 @@ video {
     }
 
     .card {
-        width: 50%;
+        width: 80%;
+        min-height: 600px;
     }
+
+    
 }
 
 @media screen and (max-width:768px) {
@@ -346,6 +358,11 @@ video {
     .card {
         width: 100%;
         font-size: 15px;
+        min-height: 500px;
+    }
+
+    .card-info {
+        min-height: 250px;
     }
 
     
