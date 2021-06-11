@@ -142,13 +142,17 @@ nav {
     margin: 25px;
     font-size: 20px;
     position: relative;
-    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .button-container {
     position: absolute;
     bottom: 0;
     left: 10px;
+    min-height: 40px;
+    width: 100%;
 }
   
 .card:hover {
@@ -157,7 +161,7 @@ nav {
 
 .card-info {
     padding: 2px 16px;
-    min-height: 300px;
+    padding-bottom: 60px;
 }
 
 .card-info h2 {
@@ -253,7 +257,11 @@ video {
     z-index: -1;
 }
 
-
+.spacer {
+    width: 200px; 
+    height: 25px; 
+    margin-right:0px;
+}
   
 
 @media screen and (max-width:1024px) {
@@ -275,13 +283,13 @@ video {
 
     .card {
         width: 80%;
-        min-height: 600px;
+        min-height: 530px;
     }
 
     
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:700px) {
 
     html,body {
         overflow-x: hidden;
@@ -290,6 +298,10 @@ video {
 
     .logo {
         font-size: 12px;
+    }
+
+    .banner .banner-text {
+        text-align: center;
     }
 
     .nav-links {
@@ -358,11 +370,15 @@ video {
     .card {
         width: 100%;
         font-size: 15px;
-        min-height: 500px;
+        min-height: 450px;
     }
 
     .card-info {
-        min-height: 250px;
+        padding-bottom: 30px;
+    }
+
+    .finisher {
+        font-size: 12px;
     }
 
     
