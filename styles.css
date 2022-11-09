@@ -76,17 +76,17 @@ nav {
 }
 
 .banner h1 {
-    font-size: 50px; 
+    font-size: 50px;
     padding: 15px;
 }
 
 .banner h2 {
-    font-size: 40px; 
+    font-size: 40px;
     padding: 15px
 }
 
 .banner p {
-    font-size: 25px; 
+    font-size: 25px;
     padding: 15px
 }
 
@@ -154,7 +154,7 @@ nav {
     min-height: 40px;
     width: 100%;
 }
-  
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -178,6 +178,11 @@ nav {
 .card-info .project-description {
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+.card-img {
+    height: 21.875rem;
+    padding: 1rem;
 }
 
 .link-button {
@@ -258,11 +263,10 @@ video {
 }
 
 .spacer {
-    width: 200px; 
-    height: 25px; 
+    width: 200px;
+    height: 25px;
     margin-right:0px;
 }
-  
 
 @media screen and (max-width:1024px) {
     .nav-links {
@@ -285,8 +289,6 @@ video {
         width: 80%;
         min-height: 530px;
     }
-
-    
 }
 
 @media screen and (max-width:700px) {
@@ -381,8 +383,6 @@ video {
     .finisher {
         font-size: 12px;
     }
-
-    
 }
 
 
