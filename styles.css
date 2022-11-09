@@ -1,8 +1,9 @@
-* { 
+* {
 	box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html, body {
 	min-height: 100%;
 	color: #000;
@@ -292,7 +293,6 @@ video {
 }
 
 @media screen and (max-width:700px) {
-
     html,body {
         overflow-x: hidden;
         position: relative;
@@ -378,6 +378,10 @@ video {
 
     .card-info {
         padding-bottom: 30px;
+    }
+
+    .card-img {
+        height: auto;
     }
 
     .finisher {
