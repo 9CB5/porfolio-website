@@ -1,140 +1,124 @@
+<!DOCTYPE html>
+
 <html lang="en">
-<!-- Head section -->
-<!------------------------------------------------------------------------------------------------>
-<head>
-<meta charset="utf-8">
-    <!-- Title -->
-    <!-------------------------------------------------------------------------------------------->
-    <title>Christian Barcelona</title>
+    <head>
+        <!-- Meta data -->
+        <!---------------------------------------------------------------------------------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Meta tags -->
-    <!-------------------------------------------------------------------------------------------->
-    <meta name="description" content="Christian Barcelona - Portfolio Website">
-    <meta name="author" content="Christian Barcelona">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christian Barcelona (dev)</title>
 
-    <!-- Links -->
-    <!-------------------------------------------------------------------------------------------->
-    <link
-        href="/assets/favicon.png"
-        rel="icon"
-        type="image/png"
-    >
-    <link
-        href="styles.css"
-        rel="stylesheet"
-    >
-    <link
-        href="https://fonts.gstatic.com"
-        rel="preconnect"
-    >
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-        rel="stylesheet"
-    >
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        rel="stylesheet"
-    >
-</head>
+        <!-- Links -->
+        <!---------------------------------------------------------------------------------------->
+        <link
+            href="/assets/favicon.png"
+            rel="icon"
+            type="image/png"
+        >
+        <link
+            href="./css/style.css"
+            rel="stylesheet"
+        >
+        <link
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        >
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        >
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        >
+    </head>
 
-<!-- Body section -->
-<!------------------------------------------------------------------------------------------------>
-<body>
-    <!-- Nav section -->
-    <!-------------------------------------------------------------------------------------------->
-    <nav>
-        <div class="logo">
-        <h1><span>chris barcelona</span></h1>
-        </div>
+    <body>
+        <!-- Nav section -->
+        <!---------------------------------------------------------------------------------------->
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <span>chris barcelona</span>
+            </div>
 
-        <ul class="nav-links">
-            <li><a href="#a-link">About</a></li>
-            <li><a href="#mw-link">My Work</a></li>
-            <li><a href="#c-link">Contact</a></li>
-            <li><a class="link-button" href="assets/cv2.pdf" target="_blank"> RESUME</a> </li>
-        </ul>
+            <ul class="navigation__links">
+                <li class="navigation__links__link"><a href="#a-link">About</a></li>
+                <li class="navigation__links__link"><a href="#mw-link">My Work</a></li>
+                <li class="navigation__links__link"><a href="#c-link">Contact</a></li>
+                <li class="navigation__links__link"><a class="link-button" href="assets/cv2.pdf" target="_blank"> RESUME</a> </li>
+            </ul>
 
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+            <img
+                class="navigation__burger"
+                src="./assets/icon-hamburger.svg"
+                alt="burger menu"
+            >
+        </nav>
 
-    <!-- Banner section -->
-    <!-------------------------------------------------------------------------------------------->
-    <section class="banner">
-        <div class="banner-text">
+        <!-- Header section -->
+        <!---------------------------------------------------------------------------------------->
+        <header class="header">
             <h1>Hi, I'm Chris.</h1>
             <h2>I'm a <span>web developer</span></h2>
             <p>I like designing and building cool things for the web and beyond.</p>
-        </div>
-    </section>
+        </header>
 
-    <!-- About me section -->
-    <!-------------------------------------------------------------------------------------------->
-    <section class="about-me" id="a-link">
-        <div class="section-title">
-            <mark>ABOUT ME</mark>
-        </div>
-
-        <div class="about-me-info">
-            <div class="avatar">
-                <img src="assets/avataaars.png" height="300px">
-            </div>
-            <div class="intro">
-                <p> I'm a web developer and creative technologist with a passion for web
-                    development and design. I studied Computer Science at Keele University.
-                </p>
-                <br>
-                <p><b>Here are some technologies I’ve been working with recently:</b></p>
-                <br>
-                <ul class="tech-list">
-                    <li>Javascript</li>
-                    <li>HTML CSS</li>
-                    <li>Angular</li>
-                    <li>React</li>
-                    <li>PHP</li>
-                    <li>Laravel</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- My work section -->
-    <!-------------------------------------------------------------------------------------------->
-    <section class="my-work" id="mw-link">
-        <div class="section-title">
-            <mark>MY WORK</mark>
-        </div>
-
-        <!-- Cards -->
+        <!-- About section -->
         <!---------------------------------------------------------------------------------------->
-        <div class="card-holder">
-            <!-- VALF.GG card -->
+        <section class="about">
+            <h3>About me</h3>
+
+            <img
+                class="about__avatar"
+                src="./assets/avataaars.png"
+                alt="avatar"
+            >
+
+            <p>
+                I'm a web developer and creative technologist with a passion for web
+                development and design. I studied Computer Science at Keele University.
+            </p>
+
+            <p><b>Here are some technologies I've been working with recently:</b></p>
+
+            <ul class="about__list">
+                <li>Javascript</li>
+                <li>Vue</li>
+                <li>React</li>
+                <li>SASS</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+            </ul>
+        </section>
+
+        <section class="work">
+            <h3>My work</h3>
+
+            <!-- Cards-->
             <!------------------------------------------------------------------------------------>
-            <aside class="card">
-                <img
-                    alt="valf.gg"
-                    src="./assets/valfgg-min.png"
-                    class="card-img"
-                >
+            <div class="work__cards-box">
+                <aside class="card">
+                    <img
+                        class="card__img"
+                        src="./assets/valfgg-min.png"
+                        alt="valfgg"
+                    >
 
-                <article class="card-info">
-                    <h2><b>VALF.GG</b></h2>
-                    <p class="technologies">React, Firebase</p>
-                    <p class="project-description">
-                        Web application for Valorant that allows players to
-                        quickly find a group to play with for competitive or casual play.
-                        Users can either create a group or join a group in the list.
-                    </p>
+                    <div class="card__description">
+                        <h4 class="card__descrition__title">Valf.gg</h4>
+                        <p class="card__description__tech">React, Firebase</p>
+                        <p>
+                            Web application for Valorant that allows players to
+                            quickly find a group to play with for competitive or casual play.
+                            Users can either create a group or join a group in the list.
+                        </p>
+                    </div>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
+                    <div class="card__description__buttons-box">
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://github.com/9CB5/valorant-lfg"
                             target="_blank"
                             title="link to valf.gg github"
@@ -143,7 +127,7 @@
                             Github
                         </a>
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://react-lfg-tool.web.app/"
                             target="_blank"
                             title="link to valf.gg live"
@@ -151,110 +135,95 @@
                             <i class="fa fa-external-link"></i> Live
                         </a>
                     </div>
-                </article>
-            </aside>
+                </aside>
 
-            <!-- Istanbul barbers card -->
-            <!------------------------------------------------------------------------------------>
-            <aside class="card">
-                <img
-                    alt="istanbul barbers"
-                    src="./assets/istanbulbarbers-min.png"
-                    class="card-img"
-                >
+                <aside class="card">
+                    <img
+                        class="card__img"
+                        src="./assets/istanbulbarbers-min.png"
+                        alt="istanbul barbers"
+                    >
 
-                <article class="card-info">
-                    <h2><b>Istanbul Barbers</b></h2>
-                    <p class="technologies">HTML, CSS, Javascript, Bootstrap</p>
-                    <p class="project-description">
-                        Created a website for Istanbul Barbers, a barbershop based in Longton, Stoke-on-Trent.
-                        The website contains an up-to-date feed of their Instagram to showcase
-                        their most recent haircuts.
-                    </p>
+                    <div class="card__description">
+                        <h4 class="card__descrition__title">Istanbul Barbers</h4>
+                        <p class="card__description__tech">HTML, CSS, Javascript, Bootstrap</p>
+                        <p>
+                            Created a website for Istanbul Barbers, a barbershop based in Longton, Stoke-on-Trent.
+                            The website contains an up-to-date feed of their Instagram to showcase
+                            their most recent haircuts.
+                        </p>
+                    </div>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
+                    <div class="card__description__buttons-box">
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://github.com/9CB5/istanbulbarbers"
                             target="_blank"
-                            title="link to istanbul barbers github"
+                            title="link to valf.gg github"
                         >
                             <i class="fa fa-github"></i>
                             Github
                         </a>
                     </div>
-                </article>
-            </aside>
-        </div>
+                </aside>
 
-        <div class="card-holder">
-            <!-- Room card -->
-            <!------------------------------------------------------------------------------------>
-            <aside class="card">
-                <img
-                    alt="room homepage"
-                    src="./assets/roomhomepage-min.png"
-                    class="card-img"
-                >
+                <aside class="card">
+                    <img
+                        class="card__img"
+                        src="./assets/roomhomepage-min.png"
+                        alt="room"
+                    >
 
-                <article class="card-info">
-                    <h2><b>Room Homepage</b></h2>
-                    <p class="technologies">HTML, CSS, Javascript</p>
-                    <p class="project-description">
-                        Developed a fully responsive homepage for the room as
-                        part of a front-end mentor task. The website contains an image slider made
-                        with pure javascript that can be manually controlled by the user.
-                    </p>
+                    <div class="card__description">
+                        <h4 class="card__descrition__title">Room</h4>
+                        <p class="card__description__tech">HTML, CSS, Javascript</p>
+                        <p>
+                            Developed a fully responsive homepage for the room as
+                            part of a front-end mentor task. The website contains an image slider made
+                            in javascript that can be manually controlled by the user.
+                        </p>
+                    </div>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
+                    <div class="card__description__buttons-box">
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://github.com/9CB5/room-homepage-v2"
                             target="_blank"
-                            title="link to room homepage github"
+                            title="link room github"
                         >
                             <i class="fa fa-github"></i>
                             Github
                         </a>
-
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://9cb5.github.io/room-homepage-v2/"
                             target="_blank"
-                            title="link to room homepage live"
+                            title="link to room live"
                         >
                             <i class="fa fa-external-link"></i> Live
                         </a>
                     </div>
-                </article>
-            </aside>
+                </aside>
 
-            <!-- Easybank card -->
-            <!------------------------------------------------------------------------------------>
-            <aside class="card">
-                <img
-                    alt="easybank"
-                    src="./assets/easybank.jpg"
-                    class="card-img"
-                >
+                <aside class="card">
+                    <img
+                        class="card__img"
+                        src="./assets/easybank.jpg"
+                        alt="easybank"
+                    >
 
-                <article class="card-info">
-                    <h2><b>Easybank</b></h2>
-                    <p class="technologies">HTML, CSS, Javascript, SASS</p>
-                    <p class="project-description">
-                        Easybank responsive landing page made with SASS using BEM naming convention and 7-1
-                        design artchitecture to structure the project.
-                    </p>
+                    <div class="card__description">
+                        <h4 class="card__descrition__title">Easybank</h4>
+                        <p class="card__description__tech">HTML, CSS, Javascript, SASS</p>
+                        <p>
+                            Easybank responsive landing page made with SASS using BEM naming convention and 7-1
+                            design artchitecture to structure the project.
+                        </p>
+                    </div>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
+                    <div class="card__description__buttons-box">
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://github.com/9CB5/easybank-landing-page"
                             target="_blank"
                             title="link to easybank github"
@@ -262,9 +231,8 @@
                             <i class="fa fa-github"></i>
                             Github
                         </a>
-
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://9cb5.github.io/easybank-landing-page/"
                             target="_blank"
                             title="link to easybank live"
@@ -272,34 +240,28 @@
                             <i class="fa fa-external-link"></i> Live
                         </a>
                     </div>
-                </article>
-            </aside>
-        </div>
+                </aside>
 
-        <div class="card-holder">
-            <!-- Valorant text colouriser card -->
-            <!------------------------------------------------------------------------------------>
-            <aside class="card">
-                <img
-                    alt="valorant text colouriser"
-                    src="./assets/textcolouriser-min.png"
-                    class="card-img"
-                >
+                <aside class="card">
+                    <img
+                        class="card__img"
+                        src="./assets/textcolouriser-min.png"
+                        alt="valorant text colouriser"
+                    >
 
-                <article class="card-info">
-                    <h2><b>Valorant Text Colouriser</b></h2>
-                    <p class="technologies">React, Bootstrap</p>
-                    <p class="project-description">
-                        A simple app that gives Valorant players the ability to change
-                        the colour of their text in Valorant's chat client. This is the ideal tool
-                        for creating a message that stands out.
-                    </p>
+                    <div class="card__description">
+                        <h4 class="card__descrition__title">Valorant Text Colouriser</h4>
+                        <p class="card__description__tech">React, Bootstrap</p>
+                        <p>
+                            A simple app that gives Valorant players the ability to change
+                            the colour of their text in Valorant's chat client. This is the ideal tool
+                            for creating a message that stands out.
+                        </p>
+                    </div>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
+                    <div class="card__description__buttons-box">
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://github.com/9CB5/valorant-text-colouriser"
                             target="_blank"
                             title="link to valorant text colouriser github"
@@ -307,9 +269,8 @@
                             <i class="fa fa-github"></i>
                             Github
                         </a>
-
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://valorant-text-colouriser.web.app/"
                             target="_blank"
                             title="link to valorant text colouriser live"
@@ -317,32 +278,28 @@
                             <i class="fa fa-external-link"></i> Live
                         </a>
                     </div>
-                </article>
-            </aside>
+                </aside>
 
-            <!-- Blogr card -->
-            <!------------------------------------------------------------------------------------>
-            <aside class="card">
-                <img
-                    alt="blogr"
-                    src="./assets/blogr-min.png"
-                    class="card-img"
-                >
+                <aside class="card">
+                    <img
+                        class="card__img"
+                        src="./assets/blogr.png"
+                        alt="valorant text colouriser"
+                    >
 
-                <article class="card-info">
-                    <h2><b>Blogr</b></h2>
-                    <p class="technologies">HTML, CSS, SASS, Javascript, Animation.css</p>
-                    <p class="project-description">
-                        Developed a fully responsive landing page for Blogr as part of a front-end
-                        mentor task. The website contains modern design trends such as gradient
-                        backgrounds and curved edges.
-                    </p>
+                    <div class="card__description">
+                        <h4 class="card__descrition__title">Blogr</h4>
+                        <p class="card__description__tech">HTML, CSS, SASS, Javascript, Animation.css</p>
+                        <p>
+                            Developed a fully responsive landing page for Blogr as part of a front-end
+                            mentor task. The website contains modern design trends such as gradient
+                            backgrounds and curved edges.
+                        </p>
+                    </div>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
+                    <div class="card__description__buttons-box">
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://github.com/9CB5/blogr-v2"
                             target="_blank"
                             title="link to blogr github"
@@ -350,9 +307,8 @@
                             <i class="fa fa-github"></i>
                             Github
                         </a>
-
                         <a
-                            class="link-button"
+                            class="card__description__button"
                             href="https://9cb5.github.io/blogr-v2/"
                             target="_blank"
                             title="link to blogr live"
@@ -360,69 +316,30 @@
                             <i class="fa fa-external-link"></i> Live
                         </a>
                     </div>
-                </article>
-            </aside>
+                </aside>
+            </div>
+        </section>
 
-            <!-- Codepen -->
-            <!------------------------------------------------------------------------------------>
-            <!-- <aside class="card">
-                <img
-                    alt="codepen"
-                    src="./assets/codepen.jpg"
-                    class="card-img"
+        <footer class="footer">
+            <h3>Contacts</h3>
+
+            <div class="footer__social-links">
+                <a class="footer__social-link">
+                    <i class="fa fa-envelope"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/christianbarcelona/"
+                    class="footer__social-link"
                 >
+                <i class="fa fa-linkedin"></i></a>
+            </div>
 
-                <article class="card-info">
-                    <h2><b>Codepen</b></h2>
-                    <p class="technologies">HTML, CSS, SASS, JS, Kaboom.js, Brain.js</p>
-                    <p class="project-description">
-                        Check out my codepen to see more projects, including CSS art,
-                        website layouts, games and many more.
-                    </p>
+            <p>~ Designed and built by Chris, 2023 ~</p>
+        </footer>
 
-                    <div class="spacer"></div>
-
-                    <div class="button-container">
-                        <a
-                            class="link-button"
-                            href="https://codepen.io/gfpchris/collections"
-                            target="_blank"
-                            title="link to codepen"
-                        >
-                            <i class="fa fa-external-link"></i> Codepen
-                        </a>
-                    </div>
-                </article>
-            </aside> -->
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <!-------------------------------------------------------------------------------------------->
-    <footer class="contact-me" id="c-link">
-        <div class="section-title">
-            <mark>CONTACTS</mark>
-        </div>
-
-        <div class="social-links">
-            <a
-                class="social-link-button"
-                href="mailto:christianbarcelona95@gmail.com"
-            >
-                <i
-                    class="fa fa-envelope"
-                    style="line-height: 40px; font-size: 20px;">
-                </i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/christianbarcelona/" class="social-link-button"><i class="fa fa-linkedin" style="line-height: 40px; font-size: 20px;"></i></a>
-        </div>
-
-        <p class="finisher">~ Designed & built by Chris, 2023 ~</p>
-    </footer>
-
-    <!-- Script imports -->
-    <!-------------------------------------------------------------------------------------------->
-    <script src="app.js"></script>
-</body>
+        <!-- Script import -->
+        <!---------------------------------------------------------------------------------------->
+        <script src="./app.js"></script>
+    </body>
 </html>
