@@ -1,14 +1,18 @@
-// const navToggle = () => {
-//     const burger = document.querySelector('.burger');
-//     const nav = document.querySelector('.nav-links');
+function navSetup() {
+    const burger = document.querySelector(".navigation__burger");
+    const links = document.querySelector(".navigation__links");
+    const overlay = document.querySelector(".navigation__overlay");
+    const body = document.querySelector("body");
 
-//     burger.addEventListener('click', () => {
-//         nav.classList.toggle('nav-active');
-//     });
+    burger.addEventListener("click", () => {
+        links.classList.toggle("show");
+        overlay.classList.toggle("show");
+        body.classList.toggle("scroll-lock");
+    });
+}
 
-//     nav.addEventListener('click', () => {
-//         nav.classList.toggle('nav-active');
-//     });
-// }
+function main() {
+    navSetup();
+}
 
-// navToggle();
+main();
