@@ -44,11 +44,35 @@
             </div>
 
             <ul class="navigation__links">
-                <li class="navigation__links__link"><a href="#a-link">About</a></li>
-                <li class="navigation__links__link"><a href="#mw-link">My Work</a></li>
-                <li class="navigation__links__link"><a href="#c-link">Contact</a></li>
-                <li class="navigation__links__link"><a class="link-button" href="assets/cv2.pdf" target="_blank"> RESUME</a> </li>
+                <li
+                    onclick="linkClicked()"
+                    class="navigation__links__link"
+                >
+                    <a href="#about">About</a>
+                </li>
+
+                <li
+                    onclick="linkClicked()"
+                    class="navigation__links__link"
+                >
+                    <a href="#work">My Work</a>
+                </li>
+
+                <li
+                    onclick="linkClicked()"
+                    class="navigation__links__link"
+                >
+                    <a href="#footer">Contact</a>
+                </li>
             </ul>
+
+            <a
+                class="navigation__cv"
+                href="assets/cv2.pdf"
+                target="_blank"
+            >
+                CV
+            </a>
 
             <img
                 class="navigation__burger"
@@ -69,7 +93,10 @@
 
         <!-- About section -->
         <!---------------------------------------------------------------------------------------->
-        <section class="about">
+        <section
+            class="about"
+            id="about"
+        >
             <h3>About me</h3>
 
             <img
@@ -95,7 +122,10 @@
             </ul>
         </section>
 
-        <section class="work">
+        <section
+            class="work"
+            id="work"
+        >
             <h3>My work</h3>
 
             <!-- Cards-->
@@ -322,7 +352,10 @@
             </div>
         </section>
 
-        <footer class="footer">
+        <footer
+            class="footer"
+            id="footer"
+        >
             <h3>Contacts</h3>
 
             <div class="footer__social-links">
