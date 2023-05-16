@@ -9,6 +9,8 @@
 
     @include respond(tablet) {
         width: 20rem;
+        position: relative;
+        min-height: 31rem;
     }
 
     @include respond(desktop) {
@@ -20,11 +22,14 @@
     }
 
     &__img {
-        // height: 10rem;
         width: 100%;
         z-index: -1;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+
+        @include respond(tablet) {
+            height: 13rem;
+        }
     }
 
     &__description {
@@ -58,6 +63,12 @@
             padding: 1rem;
             display: flex;
             gap: 1rem;
+
+            @include respond(desktop) {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
         }
     }
 }
